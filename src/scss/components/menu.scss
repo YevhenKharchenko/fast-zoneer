@@ -1,8 +1,8 @@
 .context-menu {
-  background: #283544;
-  border: 2px solid #283544;
-  padding: 24px 21px 40px 21px;
-  max-width: 284px;
+  box-shadow: -5px 3px 60px 0 #7738ff;
+  background: #141414;
+  padding: 100px 53px 40px 53px;
+  max-width: 325px;
   width: 100%;
   margin: 0 auto;
   flex-direction: column;
@@ -17,79 +17,109 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
   visibility: hidden;
+
+  @include media(desktop) {
+    padding: 90px 40px 40px 40px;
+    max-width: 480px;
+    max-height: 1024px;
+  }
 }
 
 .close-btn {
   display: none;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-bottom: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 
   @include media(desktop) {
-    display: none;
+    top: 40px;
+    right: 40px;
+  }
+}
+
+.close-icon {
+  @include media(desktop) {
+    width: 42px;
+    height: 42px;
   }
 }
 
 .context-nav {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 40px;
+
+  @include media(desktop) {
+    gap: 32px;
+  }
 }
 
 .context-nav-list {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 23px;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+  }
 }
 
 .context-list-item {
-  max-width: 240px;
+  max-width: 218px;
   width: 100%;
+
+  @include media(desktop) {
+    max-width: 400px;
+  }
 }
 
 .context-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f8f8f8;
-  border: 1px solid #283544;
-  border-radius: 12px;
-  padding: 9px;
-  width: 100%;
-  font-family: 'DM Serif Text', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.33333;
-  color: #283544;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 
   &:active {
+    border-bottom: 1px solid #7738ff;
+  }
+
+  @include media(desktop) {
+    font-size: 48px;
+    justify-content: start;
   }
 }
 
 .context-privacy-list {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 24px;
 }
 
 .context-privacy-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fd7765;
-  border-radius: 12px;
-  padding: 13px 9px;
-  font-family: 'DM Serif Text', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 0.88889;
-  color: #283544;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 
   &:active {
+    border-bottom: 1px solid #7738ff;
+  }
+
+  @include media(desktop) {
+    font-size: 40px;
+    justify-content: start;
   }
 }
 
@@ -100,7 +130,6 @@
   visibility: visible;
 
   @include media(desktop) {
-    display: none;
   }
 }
 

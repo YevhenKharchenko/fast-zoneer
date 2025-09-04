@@ -1,73 +1,72 @@
 .header {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  background: linear-gradient(90deg, #ffe098 0%, #fd7765 47.12%, #283544 100%);
-  border-bottom: 1px solid #000;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background: #141414;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding-top: 21px;
-    padding-bottom: 21px;
+  }
+}
+
+.header-bg-wrapper {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/header/header-figure-mob.png);
+  background-repeat: no-repeat;
+  background-position: top right 70px;
+  background-size: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    background-image: url(../img/header/header-figure-desk.png);
+    background-position: top right 125px;
   }
 }
 
 .header-container {
+  padding-right: 34px;
+  padding-left: 4px;
+
+  @include media(desktop) {
+    padding-right: 96px;
+    padding-left: 96px;
+  }
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 
   @include media(desktop) {
-    justify-content: start;
-    gap: 54px;
+    gap: 436px;
   }
 }
 
-.nav-list {
-  display: none;
-
-  @include media(desktop) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-  }
-}
-
-.nav-list-link {
+.header-logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'DM Serif Text', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #000;
-  transition: all 0.3s ease-in-out;
+  min-width: 132px;
 
-  &:hover,
-  &.active {
-    color: #fff;
+  @include media(desktop) {
+    margin-left: auto;
+    min-width: 186px;
   }
-}
-
-.nav-list-link.active {
-  color: #fff;
 }
 
 .nav-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 63px;
 
   @include media(desktop) {
-    display: none;
+    min-width: 95px;
   }
+}
+
+.header-menu-img {
 }

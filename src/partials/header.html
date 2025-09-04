@@ -1,40 +1,48 @@
 <header class="header">
-  <div class="container header-container">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#home">Home</a>
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#patterns"
-            >Focus Patterns</a
-          >
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#glossary">Glossary</a>
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#design"
-            >Perception Design</a
-          >
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#essays">Essays</a>
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#submissions"
-            >Submissions</a
-          >
-        </li>
-        <li class="nav-list-item">
-          <a class="nav-list-link" href="./index.html#manifesto">Manifesto</a>
-        </li>
-      </ul>
-      <button class="nav-btn" type="button" aria-label="Open mobile menu">
-        <svg class="menu-icon" width="24" height="24">
-          <use href="./img/sprite.svg#icon-menu"></use>
-        </svg>
-      </button>
-    </nav>
+  <div class="header-bg-wrapper">
+    <div class="container header-container">
+      <nav class="nav">
+        <a class="header-logo-link" href="./">
+          <picture>
+            <source
+              srcset="./img/header/header-logo-desk.png"
+              media="(min-width: 1440px)"
+              width="186"
+              height="147"
+            />
+            <source
+              srcset="./img/header/header-logo-mob.png"
+              width="132"
+              height="104"
+            />
+            <img
+              class="header-logo-img"
+              src="./img/header/header-logo-mob.png"
+              alt="Logo"
+              width="132"
+              height="104"
+            />
+          </picture>
+        </a>
+        <button class="nav-btn" type="button" aria-label="Open mobile menu">
+          <picture>
+            <source
+              srcset="./img/header/menu-desk.png"
+              media="(min-width: 1440px)"
+              width="63"
+              height="56"
+            />
+            <source srcset="./img/header/menu-mob.png" width="63" height="56" />
+            <img
+              class="header-menu-img"
+              src="./img/header/menu-mob.png"
+              alt="Menu"
+              width="63"
+              height="56"
+            />
+          </picture>
+        </button>
+      </nav>
+    </div>
   </div>
 </header>
