@@ -1,0 +1,118 @@
+.cookie-banner-section {
+  background: #fbfbfb;
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
+  position: fixed;
+  left: 20px;
+  bottom: 140px;
+  transform: none;
+  z-index: 100;
+  display: none;
+
+  @include media(desktop) {
+    max-width: 1226px;
+    bottom: 8px;
+  }
+}
+
+.cookie-banner-content-wrapper {
+  padding: 20px 16px;
+
+  @include media(desktop) {
+    padding: 20px 38px 20px 40px;
+  }
+}
+
+.cookies-banner-title {
+  font-family: 'DM Serif Text', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.66667;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
+
+.cookie-banner-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    justify-content: start;
+    gap: 30px;
+  }
+}
+
+.cookie-decline-btn {
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #fd7765;
+  border-radius: 13px;
+  padding: 8px 6px;
+  width: 100%;
+  max-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+
+  @include media(desktop) {
+    max-width: 200px;
+    padding: 14px;
+    font-size: 20px;
+  }
+}
+
+.cookie-accept-btn {
+  background: #fd7765;
+  border: 1px solid #fd7765;
+  border-radius: 13px;
+  padding: 8px 6px;
+  width: 100%;
+  max-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+
+  @include media(desktop) {
+    max-width: 200px;
+    padding: 14px;
+    font-size: 20px;
+  }
+}
+
+.show-cookie-banner {
+  display: block;
+}

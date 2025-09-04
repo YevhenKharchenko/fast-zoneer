@@ -1,0 +1,123 @@
+.footer {
+  background: #283544;
+  padding: 24px 0;
+
+  @include media(desktop) {
+    padding: 40px 0;
+  }
+}
+
+.footer-container {
+  padding: 0 10px;
+
+  @include media(desktop) {
+    padding: 0 80px;
+  }
+}
+
+.footer-nav {
+  @include media(desktop) {
+  }
+}
+
+.footer-nav {
+  padding-bottom: 16px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    90deg,
+    #ffe098 0%,
+    #fd7765 47.12%,
+    #fbfbfb 100%
+  );
+  border-image-slice: 1;
+
+  @include media(desktop) {
+    padding-bottom: 40px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 16px;
+  max-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    gap: 36px;
+    max-width: max-content;
+  }
+}
+
+.footer-link {
+  font-family: 'DM Serif Text', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fd7765;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+
+  &:hover,
+  &:focus {
+  }
+}
+
+.footer-bottom-wrapper {
+  padding-top: 16px;
+
+  @include media(desktop) {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.footer-privacy-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-privacy-link {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-bottom-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 14px;
+  }
+}

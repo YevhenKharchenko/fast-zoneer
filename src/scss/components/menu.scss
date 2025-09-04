@@ -1,0 +1,121 @@
+.context-menu {
+  background: #283544;
+  border: 2px solid #283544;
+  padding: 24px 21px 40px 21px;
+  max-width: 284px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  height: 100%;
+  max-height: 812px;
+  overflow-y: auto;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.close-btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.context-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 23px;
+}
+
+.context-list-item {
+  max-width: 240px;
+  width: 100%;
+}
+
+.context-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  border: 1px solid #283544;
+  border-radius: 12px;
+  padding: 9px;
+  width: 100%;
+  font-family: 'DM Serif Text', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #283544;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.context-privacy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.context-privacy-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fd7765;
+  border-radius: 12px;
+  padding: 13px 9px;
+  font-family: 'DM Serif Text', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.88889;
+  color: #283544;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+  }
+}
+
+.is-open {
+  display: flex;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}

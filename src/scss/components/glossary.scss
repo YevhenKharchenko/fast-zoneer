@@ -1,0 +1,145 @@
+.glossary-section {
+  background: #283544;
+}
+
+.glossary-bg-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/glossary/glossary-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 1440px;
+    background-image: url(../img/glossary/glossary-bg-desk.jpg);
+  }
+}
+
+.glossary-container {
+}
+
+.glossary-title {
+  color: #fff;
+}
+
+.glossary-subtitle {
+  color: #fff;
+}
+
+.glossary-top-list-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    margin-left: 104px;
+    margin-bottom: 24px;
+  }
+}
+
+.glossary-lists-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.glossary-top-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    max-width: 698px;
+  }
+}
+
+.glossary-top-list-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.glossary-top-list-item-dot {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fd7765;
+}
+
+.glossary-top-list-item-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.glossary-item-span {
+  font-weight: 700;
+}
+
+.glossary-bottom-list-wrapper {
+  border-left: 3px solid #fd7765;
+  padding-left: 8px;
+
+  @include media(desktop) {
+    max-width: 422px;
+  }
+}
+
+.glossary-bottom-list-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 1em;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.glossary-bottom-list {
+  list-style-type: disc;
+  padding-left: 30px;
+
+  @include media(desktop) {
+    padding-left: 35px;
+  }
+}
+
+.glossary-bottom-list-item {
+  color: #fff;
+}
+
+.glossary-bottom-list-item-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

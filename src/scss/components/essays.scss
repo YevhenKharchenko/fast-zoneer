@@ -1,0 +1,144 @@
+.essays-section {
+  background: #fd7765;
+}
+
+.essays-section-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 1440px;
+  }
+}
+
+.essays-container {
+  padding: 0;
+}
+
+.essays-title {
+}
+
+.essays-subtitle {
+}
+
+.essays-slider-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.essays-swiper-container {
+  max-width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1196px;
+  }
+}
+
+.essays-swiper-container.show {
+  visibility: visible;
+}
+
+.essays-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+  }
+}
+
+.essays-slide {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+      180deg,
+      #ffe098 0%,
+      #fd7765 47.12%,
+      #283544 100%
+    )
+    1;
+  padding: 8px;
+  max-width: 327px;
+  min-height: 344px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+    gap: 16px;
+    width: 100% !important;
+    max-width: 386px;
+    min-height: 360px;
+  }
+}
+
+.essays-slide-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.essays-slide-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.essays-dot {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+
+.essays-dot.active {
+  width: 22px;
+  height: 12px;
+  background-color: #283544;
+}
