@@ -1,52 +1,49 @@
 <section class="section hero-section" id="home">
-  <div class="hero-wrapper">
+  <div class="hero-bg-wrapper">
     <div class="container hero-container">
-      <div class="hero-bg-wrapper-desk">
-        <div class="hero-top-wrapper">
-          <h1 class="hero-title">The Shape of Attention</h1>
-          <p class="hero-title-text">
-            <span class="hero-top-span">mentaium.space</span> is a blog that
-            studies the invisible structures inside games.
-          </p>
-          <p class="hero-subtitle">This is not a review site.</p>
-          <p class="hero-subtitle-text">
-            It’s a chronicle of the architecture of attention.
-          </p>
-        </div>
-        <div class="hero-img-text-wrapper">
-          <p class="hero-img-top-text">
-            Most game reviews focus on what you do.
-          </p>
-          <p class="hero-img-middle-text">
-            We focus on
-            <span class="hero-middle-span">how you’re led to do it.</span>
-          </p>
-          <p class="hero-img-bottom-text">
-            Every flicker, delay, vibration, and shadow in a game shapes what
-            you notice — and what you miss.
-          </p>
-        </div>
-        <div class="hero-bottom-wrapper">
-          <div class="hero-list-wrapper">
-            <p class="hero-list-title">We explore:</p>
-            <ul class="hero-list">
-              <li class="hero-list-item">
-                <p class="hero-item-text">How games structure perception</p>
-              </li>
-              <li class="hero-list-item">
-                <p class="hero-item-text">
-                  How mechanics regulate breath and gaze
-                </p>
-              </li>
-              <li class="hero-list-item">
-                <p class="hero-item-text">
-                  When flow state emerges — and when it shatters
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <picture>
+        <source
+          srcset="./img/hero/hero-main-title-desk.png"
+          media="(min-width: 1440px)"
+          width="967"
+          height="157"
+        />
+        <source
+          srcset="./img/hero/hero-main-title-mob.png"
+          width="340"
+          height="55"
+        />
+        <img
+          class="header-main-title-img"
+          src="./img/hero/hero-main-title-mob.png"
+          alt="Title"
+          width="340"
+          height="55"
+        />
+      </picture>
+      <p class="hero-text">
+        FastZoneer transforms traditional onboarding into an engaging, gamified
+        experience. Each employee enters a virtual path of zones — from basic
+        orientation to advanced role-specific training.
+      </p>
+      <a href="#contact" class="hero-scroll-btn" aria-label="Scroll to bottom">
+        <picture>
+          <source
+            srcset="./img/hero/hero-scroll-desk.png"
+            media="(min-width: 1440px)"
+            width="118"
+            height="178" />
+          <source
+            srcset="./img/hero/hero-scroll-mob.png"
+            width="54"
+            height="80" />
+          <img
+            class="header-scroll-img"
+            src="./img/hero/hero-scroll-mob.png"
+            alt="Arrow"
+            width="54"
+            height="80" /></picture
+      ></a>
     </div>
   </div>
 </section>
