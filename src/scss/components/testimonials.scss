@@ -1,0 +1,124 @@
+.testimonials-section {
+}
+
+.testimonials-bg-wrapper {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/testimonials/testimonials-figure-mob.png),
+    url(../img/testimonials/testimonials-lines-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, bottom center;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 220px;
+    max-width: 1440px;
+    background-image: url(../img/testimonials/testimonials-title.png),
+      url(../img/testimonials/testimonials-figure-desk.png),
+      url(../img/testimonials/testimonials-lines-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 112px right 6px, bottom 83px left 31px, top center;
+    background-size: 365px 560px, auto, auto;
+  }
+}
+
+.testimonials-container {
+  padding: 0 24px;
+
+  @include media(desktop) {
+    padding: 0 160px;
+  }
+}
+
+.testimonials-title {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.testimonials-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 25px 16px;
+    max-width: 860px;
+  }
+}
+
+.testimonials-list-item {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  width: 100%;
+  max-width: 327px;
+  min-height: 204px;
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(1) {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+  }
+
+  &:nth-child(2) {
+    background: rgba(215, 215, 215, 0.3);
+    border: 1px solid #d7d7d7;
+  }
+
+  &:nth-child(3) {
+    background: rgba(160, 182, 209, 0.3);
+    border: 1px solid #a0b6d1;
+  }
+
+  @include media(desktop) {
+    padding: 24px 32px 16px 32px;
+    max-width: 420px;
+    min-height: 187px;
+  }
+}
+
+.testimonials-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fffbfb;
+
+  @include media(desktop) {
+  }
+}
+
+.testimonials-item-company {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffbfb;
+  margin-top: auto;
+
+  @include media(desktop) {
+  }
+}
+
+.testimonials-item-profession {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffbfb;
+
+  @include media(desktop) {
+  }
+}

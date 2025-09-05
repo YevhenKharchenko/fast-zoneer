@@ -1,0 +1,132 @@
+.tools-section {
+}
+
+.tools-bg-wrapper {
+  padding-top: 40px;
+  padding-bottom: 59px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/tools/tools-lines-mob.png),
+    url(../img/tools/tools-figure-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, bottom left;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    background-image: url(../img/tools/tools-title.png),
+      url(../img/tools/tools-lines-desk.png),
+      url(../img/tools/tools-figure-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 230px right 6px, bottom center, top 90px left;
+    background-size: 365px 560px, auto, auto;
+  }
+}
+
+.tools-container {
+  padding: 0 20px;
+
+  @include media(desktop) {
+    padding: 0 160px;
+  }
+}
+
+.tools-title {
+  max-width: 259px;
+  margin-left: 4px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    max-width: 578px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.tools-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    gap: 40px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.tools-list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(1) {
+    .tools-item-title {
+      text-shadow: 0 0 2px 0 #7738ff;
+      color: #7738ff;
+    }
+  }
+
+  &:nth-child(2) {
+    .tools-item-title {
+      text-shadow: 0 0 2px 0 #ffe606;
+      color: #ffe606;
+    }
+  }
+
+  &:nth-child(3) {
+    .tools-item-title {
+      text-shadow: 0 0 2px 0 #ff55f8;
+      color: #ff55f8;
+    }
+  }
+
+  &:nth-child(4) {
+    .tools-item-title {
+      text-shadow: 0 0 2px 0 #f00032;
+      color: #f00032;
+    }
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.tools-img {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.tools-item-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.tools-item-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}

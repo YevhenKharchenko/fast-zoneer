@@ -61,15 +61,15 @@ function updateArrowIcons() {
   const rightIcon = zonesRightArrow.querySelector('use');
 
   if (zonesLeftArrow.disabled) {
-    leftIcon.setAttribute('href', './img/sprite.svg#icon-arrow-left-filled');
-  } else {
     leftIcon.setAttribute('href', './img/sprite.svg#icon-arrow-left');
+  } else {
+    leftIcon.setAttribute('href', './img/sprite.svg#icon-arrow-left-filled');
   }
 
   if (zonesRightArrow.disabled) {
-    rightIcon.setAttribute('href', './img/sprite.svg#icon-arrow-right-filled');
-  } else {
     rightIcon.setAttribute('href', './img/sprite.svg#icon-arrow-right');
+  } else {
+    rightIcon.setAttribute('href', './img/sprite.svg#icon-arrow-right-filled');
   }
 }
 

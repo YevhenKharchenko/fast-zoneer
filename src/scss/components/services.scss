@@ -1,0 +1,112 @@
+.services-section {
+}
+
+.services-bg-wrapper {
+  padding-top: 40px;
+  padding-bottom: 180px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/services/services-figure-mob.png),
+    url(../img/services/services-lines-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, bottom center;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 145px;
+    max-width: 1440px;
+    background-image: url(../img/services/services-title.png),
+      url(../img/services/services-figure-desk.png),
+      url(../img/services/services-lines-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 170px right 6px, top 40px right 12px, top center;
+    background-size: 383px 560px, auto, auto;
+  }
+}
+
+.services-container {
+  padding: 0 24px;
+
+  @include media(desktop) {
+    padding: 0 160px;
+  }
+}
+
+.services-title {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.services-list-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #d7d7d7;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+    align-items: start;
+  }
+}
+
+.services-list-item {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  width: 100%;
+  max-width: 287px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:nth-child(1) {
+    border: 1px solid #ffe606;
+  }
+
+  &:nth-child(2) {
+    border: 1px solid #7738ff;
+  }
+
+  &:nth-child(3) {
+    border: 1px solid #4501d7;
+  }
+
+  &:nth-child(4) {
+    border: 1px solid #f00032;
+  }
+
+  @include media(desktop) {
+    padding: 40px 16px;
+    max-width: 674px;
+  }
+}
+
+.services-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
