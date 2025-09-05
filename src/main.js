@@ -1,4 +1,3 @@
 import './js/header.js';
-import './js/patterns.js';
-import './js/essays.js';
+import './js/zones.js';
 import './js/banner.js';

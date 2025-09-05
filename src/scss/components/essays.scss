@@ -115,30 +115,3 @@
     line-height: 1.2;
   }
 }
-
-.dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  margin-top: 24px;
-
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.essays-dot {
-  width: 12px;
-  height: 12px;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 8px;
-  background-color: #d9d9d9;
-  cursor: pointer;
-}
-
-.essays-dot.active {
-  width: 22px;
-  height: 12px;
-  background-color: #283544;
-}

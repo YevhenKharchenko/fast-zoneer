@@ -1,0 +1,222 @@
+.zones-section {
+}
+
+.zones-bg-wrapper {
+  padding-top: 227px;
+  padding-bottom: 208px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/zones/zones-figure-mob.png),
+    url(../img/zones/zones-lines-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left 29px, bottom center;
+  background-size: auto, auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 68px;
+    padding-bottom: 148px;
+    max-width: 1440px;
+    background-image: url(../img/zones/zones-title.png),
+      url(../img/zones/zones-figure-desk.png),
+      url(../img/zones/zones-lines-desk.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 107px right 6px, bottom right, bottom center;
+    background-size: 365px 560px, auto, auto;
+  }
+}
+
+.zones-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 160px;
+  }
+}
+
+.zones-title {
+  max-width: 259px;
+  margin-left: 24px;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    max-width: 578px;
+    margin-left: 0;
+  }
+}
+
+.zones-swiper-container {
+  max-width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 672px;
+    margin-left: 0;
+  }
+}
+
+.zones-swiper-container.show {
+  visibility: visible;
+}
+
+.zones-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+  }
+}
+
+.zones-slide {
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  max-width: 327px;
+  min-height: 229px;
+  display: flex !important;
+  flex-direction: column;
+
+  &:nth-child(1) {
+    background: rgba(215, 215, 215, 0.1);
+    border: 1px solid #d7d7d7;
+
+    .zones-slide-title {
+      color: #d7d7d7;
+      border-bottom: 1px dashed #d7d7d7;
+    }
+  }
+
+  &:nth-child(2) {
+    background: rgba(160, 182, 209, 0.1);
+    border: 1px solid #a0b6d1;
+
+    .zones-slide-title {
+      color: #a0b6d1;
+      border-bottom: 1px dashed #a0b6d1;
+    }
+  }
+
+  &:nth-child(3) {
+    background: rgba(131, 132, 227, 0.1);
+    border: 1px solid #8384e3;
+
+    .zones-slide-title {
+      color: #8384e3;
+      border-bottom: 1px dashed #8384e3;
+    }
+  }
+
+  &:nth-child(4) {
+    background: rgba(243, 247, 193, 0.1);
+    border: 1px solid #f3f7c1;
+
+    .zones-slide-title {
+      color: #f3f7c1;
+      border-bottom: 1px dashed #f3f7c1;
+    }
+  }
+
+  @include media(desktop) {
+    width: 100% !important;
+    padding: 40px;
+    max-width: 327px;
+    min-height: 229px;
+  }
+}
+
+.zones-slide-title {
+  padding-bottom: 4px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.zones-slide-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.zones-slide-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.zones-dot {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #b1b1b1;
+  cursor: pointer;
+}
+
+.zones-dot.active {
+  background-color: #4501d7;
+}
