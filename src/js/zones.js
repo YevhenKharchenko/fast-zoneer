@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
+import sprite from '../img/sprite.svg';
 
 const zonesLeftArrow = document.getElementById('zonesLeftArrow');
 const zonesRightArrow = document.getElementById('zonesRightArrow');
@@ -61,15 +62,15 @@ function updateArrowIcons() {
   const rightIcon = zonesRightArrow.querySelector('use');
 
   if (zonesLeftArrow.disabled) {
-    leftIcon.setAttribute('href', './img/sprite.svg#icon-arrow-left');
+    leftIcon.setAttribute('href', `${sprite}#icon-arrow-left`);
   } else {
-    leftIcon.setAttribute('href', './img/sprite.svg#icon-arrow-left-filled');
+    leftIcon.setAttribute('href', `${sprite}#icon-arrow-left-filled`);
   }
 
   if (zonesRightArrow.disabled) {
-    rightIcon.setAttribute('href', './img/sprite.svg#icon-arrow-right');
+    rightIcon.setAttribute('href', `${sprite}#icon-arrow-right`);
   } else {
-    rightIcon.setAttribute('href', './img/sprite.svg#icon-arrow-right-filled');
+    rightIcon.setAttribute('href', `${sprite}#icon-arrow-right-filled`);
   }
 }
 
