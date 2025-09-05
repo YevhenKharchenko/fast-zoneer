@@ -1,4 +1,9 @@
 .services-section {
+  scroll-margin-top: 100px;
+
+  @include media(desktop) {
+    scroll-margin-top: 140px;
+  }
 }
 
 .services-bg-wrapper {

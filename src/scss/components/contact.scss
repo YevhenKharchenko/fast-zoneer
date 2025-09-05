@@ -1,4 +1,9 @@
 .contact-section {
+  scroll-margin-top: 0px;
+
+  @include media(desktop) {
+    scroll-margin-top: 160px;
+  }
 }
 
 .contact-bg-wrapper {

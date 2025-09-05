@@ -1,4 +1,9 @@
 .advantages-section {
+  scroll-margin-top: 0px;
+
+  @include media(desktop) {
+    scroll-margin-top: 140px;
+  }
 }
 
 .advantages-bg-wrapper {
